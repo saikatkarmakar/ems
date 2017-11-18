@@ -1,20 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {routes} from './app.routing';
 import { AppComponent } from './app.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AttendanceFilterComponent } from './attendance/attendance-filter/attendance-filter.component';
 import { AttendanceGridComponent } from './attendance/attendance-grid/attendance-grid.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AttendanceComponent,
     AttendanceFilterComponent,
-    AttendanceGridComponent
+    AttendanceGridComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent]

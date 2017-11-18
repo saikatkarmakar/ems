@@ -12,4 +12,6 @@ export class AttendanceFilterComponent implements OnInit {
   ngOnInit() {
   }
 
+  name = "Ayan";
+
 }
