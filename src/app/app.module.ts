@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {routes} from './app.routing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { routes } from './app.routing';
 import { AppComponent } from './app.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AttendanceFilterComponent } from './attendance/attendance-filter/attendance-filter.component';
@@ -17,6 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     routes
   ],
   providers: [],
