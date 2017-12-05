@@ -8,6 +8,9 @@ import { AttendanceFilterComponent } from './attendance/attendance-filter/attend
 import { AttendanceGridComponent } from './attendance/attendance-grid/attendance-grid.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SalaryComponent } from './salary/salary.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeFilterComponent } from './employee/employee-filter/employee-filter.component';
+import { EmployeeGridComponent } from './employee/employee-grid/employee-grid.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SalaryComponent } from './salary/salary.component';
     AttendanceFilterComponent,
     AttendanceGridComponent,
     DashboardComponent,
-    SalaryComponent
+    SalaryComponent,
+    EmployeeComponent,
+    EmployeeFilterComponent,
+    EmployeeGridComponent
   ],
   imports: [
     BrowserModule,
