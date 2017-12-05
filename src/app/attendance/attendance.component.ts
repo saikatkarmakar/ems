@@ -8,11 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AttendanceComponent implements OnInit {
 
-  constructor(
-    private route: ActivatedRoute
-  ) {
-    //console.log(route.snapshot.params.id)
-   }
+  constructor(){} 
 
   ngOnInit() {
   }

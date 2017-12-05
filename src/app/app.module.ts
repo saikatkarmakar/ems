@@ -6,6 +6,7 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { AttendanceFilterComponent } from './attendance/attendance-filter/attendance-filter.component';
 import { AttendanceGridComponent } from './attendance/attendance-grid/attendance-grid.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SalaryComponent } from './salary/salary.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AttendanceComponent,
     AttendanceFilterComponent,
     AttendanceGridComponent,
-    DashboardComponent
+    DashboardComponent,
+    SalaryComponent
   ],
   imports: [
     BrowserModule,
