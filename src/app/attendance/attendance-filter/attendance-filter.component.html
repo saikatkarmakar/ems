@@ -1,3 +1,23 @@
-<p>
-  {{name}}
-</p>
+<!-- <form #heroForm="ngForm">
+  <div class="form-group">
+    <label for="name">Emp ID</label>
+    <input type="text" class="form-control" id="empId" name="empId" [(ngModel)]="filter.empId" required>
+  </div>
+
+  <div class="form-group">
+    <label for="alterEgo">Date</label>
+    <input type="text" class="form-control" id="alterEgo">
+  </div>
+
+  <button type="button" class="btn btn-success" (click)="search()">Submit</button>
+
+</form> -->
+
+<!-- Reactive form -->
+<form [formGroup]="filterForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">Emp ID:
+      <input class="form-control" formControlName="empId">
+    </label>
+  </div>
+</form>

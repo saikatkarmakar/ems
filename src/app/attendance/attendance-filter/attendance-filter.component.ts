@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-attendance-filter',
@@ -7,11 +8,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttendanceFilterComponent implements OnInit {
 
-  constructor() { }
+  /* filter: any = {
+    empId: "",
+    attDate: ""
+  }; */
+
+  /* filterForm = new FormGroup ({
+    empId: new FormControl()
+  }); */
+
+  filterForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.createForm();
+  }
+
+  createForm() {
+    this.filterForm = this.fb.group({
+      empId: ['', [Validators.required, Validators.minLength(4)] ]
+    });
+  }
+  
 
   ngOnInit() {
   }
 
-  name = "Ayan";
+  search(){
+
+  }
+
+  
 
 }
