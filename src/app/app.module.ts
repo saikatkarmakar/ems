@@ -11,6 +11,7 @@ import { SalaryComponent } from './salary/salary.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeFilterComponent } from './employee/employee-filter/employee-filter.component';
 import { EmployeeGridComponent } from './employee/employee-grid/employee-grid.component';
+import { EmployeeCreateComponent } from './employee/employee-create/employee-create.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EmployeeGridComponent } from './employee/employee-grid/employee-grid.co
     SalaryComponent,
     EmployeeComponent,
     EmployeeFilterComponent,
-    EmployeeGridComponent
+    EmployeeGridComponent,
+    EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,

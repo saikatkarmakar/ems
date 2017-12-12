@@ -1,29 +1,34 @@
-{
+[
+    {
     "_emp_id" : 1,
     "firstname":"David",
     "lastname": "Backham",
     "address":[
         "NH-54", "Kolkata"
     ]
-},{
+    },
+    {
     "_emp_id" : 2,
     "firstname":"Jackson",
     "lastname": "Farnandez",
     "address": [
         "NH-65", "Kolkata"
     ]
-},{
-    "_emp_id" : 3,
-    "firstname":"Robinson",
-    "lastname": "Farnandez",
-    "address": [
-        "NH-12", "Kolkata"
-    ]
-},{
-    "_emp_id" : 4,
-    "firstname":"Saikat",
-    "lastname": "Karmakar",
-    "address": [
-        "Birati", "Kolkata"
-    ]
-}
+    },
+    {
+        "_emp_id" : 3,
+        "firstname":"Robinson",
+        "lastname": "Farnandez",
+        "address": [
+            "NH-12", "Kolkata"
+        ]
+    },
+    {
+        "_emp_id" : 4,
+        "firstname":"Saikat",
+        "lastname": "Karmakar",
+        "address": [
+            "Birati", "Kolkata"
+        ]
+    }
+]

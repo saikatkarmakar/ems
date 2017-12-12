@@ -1,5 +1,14 @@
-{
-    "_att_id":"1",
-    "emp_id":"1",
-    "January":"2"
-}
+[
+    {
+        "_att_id":"1",
+        "emp_id":"1",
+        "January":"2",
+        "February" : "3"
+    },
+    {
+        "_att_id":"2",
+        "emp_id":"2",
+        "January":"1",
+        "February" : "0"
+    }
+]
