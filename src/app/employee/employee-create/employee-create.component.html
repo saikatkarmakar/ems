@@ -1,3 +1,17 @@
-<p>
-  employee-create works!
-</p>
+<form name="create-employee" action="" method="POST">
+    <div class="form-group">
+        <label for="name">Employee Name</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+        <small id="nameHelp" class="form-text text-muted">We'll never share your name.</small>
+      </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <textarea class="form-control" id="address" placeholder="Address"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
