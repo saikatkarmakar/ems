@@ -11,8 +11,7 @@ import { SalaryComponent } from './salary/salary.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeFilterComponent } from './employee/employee-filter/employee-filter.component';
 import { EmployeeGridComponent } from './employee/employee-grid/employee-grid.component';
-import { EmployeeCreateComponent } from './employee/employee-create/employee-create.component';
-import { EmployeeCreateFormComponent } from './employee-create-form/employee-create-form.component';
+import { EmployeeCreateComponent } from './employee/employee-create/employee-create.component';ent';
 
 @NgModule({
   declarations: [
