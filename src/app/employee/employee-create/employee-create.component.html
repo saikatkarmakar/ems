@@ -1,51 +1,59 @@
-<form [formGroup]="createEmployee" novalidate>
-    <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('firstName').valid && createEmployee.get('firstName').touched}">
-        <label for="name">Employee First Name</label>
-        <input type="text" class="form-control" formControlName="firstName" id="firstName" aria-describedby="nameHelp" placeholder="Enter First name">
+<div class="container">
+  <form [formGroup]="createEmployee" novalidate>
+      <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('firstName').valid && createEmployee.get('firstName').touched}">
+          <label for="name">Employee First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" id="firstName" aria-describedby="nameHelp" placeholder="Enter First name">
+          <small *ngIf="createEmployee.get('firstName').errors && !createEmployee.get('firstName').pristine" class="text-danger">
+            <small [hidden]="!createEmployee.get('firstName').errors.required">First name is required.</small>
+          </small>
+      </div>
+      <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('lastName').valid && createEmployee.get('lastName').touched}">
+        <label for="name">Employee Last Name</label>
+        <input type="text" class="form-control" formControlName="lastName" id="lastName" aria-describedby="nameHelp" placeholder="Enter Last name">
+        <small *ngIf="createEmployee.get('lastName').errors && !createEmployee.get('lastName').pristine" class="text-danger">
+          <small [hidden]="!createEmployee.get('lastName').errors.required">Last name is required.</small>
+        </small>
     </div>
-    <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('lastName').valid && createEmployee.get('lastName').touched}">
-      <label for="name">Employee Last Name</label>
-      <input type="text" class="form-control" formControlName="lastName" id="lastName" aria-describedby="nameHelp" placeholder="Enter Last name">
-  </div>
-  <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('emailId').valid && createEmployee.get('emailId').touched}">
-    <label for="email">Email address</label>
-    <input formControlName="emailId" type="email" class="form-control" id="emailId" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    <small *ngIf="createEmployee.get('emailId').errors && !createEmployee.get('emailId').pristine" class="text-danger">
-      <small [hidden]="!createEmployee.get('emailId').errors.required">Email address is required.</small>
-      <small [hidden]="!createEmployee.get('emailId').errors.email">Wrong Email address.</small>
-    </small>
-  </div>
-  <!-- <div class="form-group">
-    <label for="status">Status</label>
-    <input formControlName="status" type="checkbox" class="form-control" id="status" value="0">Inactive
-    <input formControlName="status" type="checkbox" class="form-control" id="status" value="1">Active    
-  </div> -->
-  <!-- <div formGroupName="address" class="well well-lg">
-    <h4>Address</h4>
-    <div class="form-group">
-      <label class="center-block">Street:
-        <input class="form-control" formControlName="street">
-      </label>
+    <div class="form-group" [ngClass]="{'has-danger': !createEmployee.get('emailId').valid && createEmployee.get('emailId').touched}">
+      <label for="email">Email address</label>
+      <input formControlName="emailId" type="email" class="form-control" id="emailId" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <small *ngIf="createEmployee.get('emailId').errors && !createEmployee.get('emailId').pristine" class="text-danger">
+        <small [hidden]="!createEmployee.get('emailId').errors.required">Email address is required.</small>
+        <small [hidden]="!createEmployee.get('emailId').errors.email">Wrong Email address.</small>
+      </small>
     </div>
-    <div class="form-group">
-      <label class="center-block">City:
-        <input class="form-control" formControlName="city">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">State:
-        <input class="form-control" formControlName="state">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">Zip Code:
-        <input class="form-control" formControlName="zip">
-      </label>
-    </div>
-  </div> -->
+    <!-- <div class="form-group">
+      <label for="status">Status</label>
+      <input formControlName="status" type="checkbox" class="form-control" id="status" value="0">Inactive
+      <input formControlName="status" type="checkbox" class="form-control" id="status" value="1">Active    
+    </div> -->
+    <!-- <div formGroupName="address" class="well well-lg">
+      <h4>Address</h4>
+      <div class="form-group">
+        <label class="center-block">Street:
+          <input class="form-control" formControlName="street">
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="center-block">City:
+          <input class="form-control" formControlName="city">
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="center-block">State:
+          <input class="form-control" formControlName="state">
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="center-block">Zip Code:
+          <input class="form-control" formControlName="zip">
+        </label>
+      </div>
+    </div> -->
 
-  
-  <input type="submit" class="btn btn-primary" value="Submit" (click)="create()" [disabled]="!createEmployee.valid">
-  <input type="button" class="btn btn-primary" value="Submit" (click)="logThis()">
-</form>
+    
+    <input type="submit" class="btn btn-primary" value="Submit" (click)="create()" [disabled]="!createEmployee.valid">
+    <input type="button" class="btn btn-primary" value="Submit" (click)="logThis()">
+  </form>
+</div>
